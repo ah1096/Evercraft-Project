@@ -1,14 +1,15 @@
-#alignment copied from Josh's repo; figure out later
-
-class Alignment():
-    GOOD, NEUTRAL, EVIL = range(3)
 
 class Character:
 
     SHEET = {
         "name" : "Yllara",
-        "alignment" : Alignment.NEUTRAL,
-            #how do I return the human-readable alignment instead of just the index?
+        "alignment" : {
+            "neutral" : true,
+            "good" : false,
+            "evil" : false,
+        },
+            #how do I return the human-readable alignment instead of just the index? XXXX
+            #changed to a nested dictionary to experiment with changing alignment???
         "level": 1,
         "AC" : 5,
         "HP" : 10,

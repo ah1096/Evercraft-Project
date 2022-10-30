@@ -12,8 +12,14 @@ class Character:
         "level": 1,
         "AC" : 5,
         "HP" : 10,
-        "abilityScores" : [0, 0, 0, 0, 0, 0]
-            #abilityScores indexes: 0=STR, 1=DEX, 2=CON, 3=WIS, 4=INT, 5=CHA
+        "abilityScores" : {
+            "STR": 10, 
+            "DEX": 10, 
+            "CON": 10, 
+            "WIS": 10, 
+            "INT": 10, 
+            "CHA": 10}
+            #changed abilityscores into a nested dictionary for easier readability
     }
     #how do i manipulate items in a dictionary? REFER TO W3 SCHOOLS
 

@@ -2,11 +2,11 @@
 class Character:
 
     SHEET = {
-        "name" : "Yllara",
+        "name" : "D. Faulte",
         "alignment" : {
-            "neutral" : true,
-            "good" : false,
-            "evil" : false,
+            "neutral" : True,
+            "good" : False,
+            "evil" : False,
         },
             #how do I return the human-readable alignment instead of just the index? XXXX
             #changed to a nested dictionary to experiment with changing alignment???
@@ -14,12 +14,12 @@ class Character:
         "AC" : 5,
         "HP" : 10,
         "abilityScores" : {
-            "STR": 10, 
-            "DEX": 10, 
-            "CON": 10, 
-            "WIS": 10, 
-            "INT": 10, 
-            "CHA": 10}
+            "STR" : 10, 
+            "DEX" : 10, 
+            "CON" : 10, 
+            "WIS" : 10, 
+            "INT" : 10, 
+            "CHA" : 10}
             #changed abilityscores into a nested dictionary for easier readability
     }
     #how do i manipulate items in a dictionary? REFER TO W3 SCHOOLS
@@ -58,6 +58,11 @@ class Character:
 
 #Character.SHEET.update({"alignment" : (input("What is your alignment? "))})
 #print(Character.SHEET.get("alignment"))
+
+############NESTED DICTIONARY METHOD TESTING######
+
+print(Character.SHEET["abilityScores"][STR])
+
 
 
 
